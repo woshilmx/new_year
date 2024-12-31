@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # 将本地静态文件目录中的内容复制到容器的 Nginx 默认静态文件目录
-COPY ./html /usr/share/nginx/html
+COPY ./index.html /usr/share/nginx/html
 
 # 将自定义的 Nginx 配置文件复制到容器内（如果需要自定义配置）
 # 如果不需要修改配置，可以省略这一行
